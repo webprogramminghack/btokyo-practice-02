@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <!-- internal -->
+    <!-- <style>
+      .text-bottom,
+      #text-id {
+        color: red;
+      }
+      input[type="text"] {
+        border: 5px solid #000;
+      }
+      #text-input {
+        font-size: 30px;
+        border: 1px solid #000;
+      }
+      div > p {
+        color: blue;
+      }
+      p + span {
+        color: green;
+      }
+      a:hover {
+        color: red;
+      }
+      input:focus {
+        color: blue;
+      }
+      p:first-child {
+        color: yellow;
+      }
+      .text-bottom {
+        color: aqua;
+      }
+      #important {
+        color: red !important; /* Spesifisitas: 0,1,0,0 */
+      }
+      .highlight {
+        color: green; /* Spesifisitas: 0,0,1,0 */
+      }
+      p {
+        color: blue; /* Spesifisitas: 0,0,0,1 */
+      }
+    </style> -->
+    <style>
+      .box-content {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid #000;
+        box-sizing: content-box;
+      }
+
+      .box-border {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 5px solid #000;
+        box-sizing: border-box;
+        overflow: scroll;
+      }
+
+      .box1 {
+        margin-bottom: 30px;
+        background-color: lightblue;
+        padding: 20px;
+      }
+
+      .box2 {
+        margin-top: 20px;
+        background-color: lightgreen;
+        padding: 20px;
+      }
+
+      .box-all-rounded {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quidem
+      tenetur voluptas dolore a maiores omnis cumque quia! Totam dolorem placeat
+      recusandae rem similique repellendus laboriosam delectus quasi rerum eius.
+    </p>
+    <p>helo helo</p>
+    <p>oke</p>
+    <div>Ini teks baru</div>
+    <div>
+      <p>Ini Teks Baru</p>
+      <span style="color: blue">Hallo Sema <span>wph</span> </span>
+    </div>
+    <span class="text-bottom" style="color: forestgreen"
+      >Ini contoh penerapan class</span
+    >
+    <br />
+    <span id="text-id">Ini teks baru lagi id</span>
+    <input id="text-input" type="text" name="" id="" />
+    <input type="password" name="" id="" />
+    <a href="http://google.com">Google</a>
+    <p id="important" class="highlight" style="color: yellow">
+      This text will be red.
+    </p>
+
+    <div style="border: 5px solid black; padding: 20px; margin: 10px">
+      Ini adalah div
+    </div>
+
+    <div style="border: 5px solid black; padding: 20px; margin: 10px">
+      Ini adalah div
+    </div>
+
+    <div class="box-content">Content Box</div>
+    <div class="box-border">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ea vel non.
+      At, sed commodi quam eius assumenda voluptatibus qui natus corporis
+      voluptatum optio omnis fugit aliquam exercitationem amet harum.
+    </div>
+
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+
+    <div class="box-all-rounded">Rounded Box</div>
+  </body>
+</html>
